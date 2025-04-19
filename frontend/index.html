@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 Task Manager</h1>
+
+      <form id="taskForm">
+        <div class="form-group">
+          <label for="title">Task Title</label>
+          <input
+            type="text"
+            class="title"
+            id="title"
+            placeholder="Task Title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Task Description</label>
+          <input
+            type="text"
+            class="description"
+            id="description"
+            placeholder="Task Description"
+            required
+          />
+        </div>
+        <button type="submit" id="submit-btn">Add Task</button>
+      </form>
+    </div>
+    <div id="taskList">
+      <h2>Tasks ⬇️</h2>
+      <ul id="tasks">
+        <!-- Task items will be dynamically added here -->
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+        <li class="task-item">
+          <h3>Task Title</h3>
+          <p>Task Description</p>
+          <p class="status">
+            Status:
+            <span>Pending</span>
+          </p>
+          <button class="edit-btn">Update</button>
+        </li>
+      </ul>
+      <div class="bg"></div>
+      <div class="update-form" id="updateForm">
+        <h2>Update Task</h2>
+        <div class="form-group">
+          <label for="updateTitle">Task Title</label>
+          <input
+            type="text"
+            class="title"
+            id="updateTitle"
+            placeholder="Task Title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateDescription">Task Description</label>
+          <input
+            type="text"
+            class="description"
+            id="updateDescription"
+            placeholder="Task Description"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateStatus">Task Status</label>
+          <select id="updateStatus">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+        <button type="submit" id="update-btn">Update Task</button>
+        <button type="button" id="delete-btn">Delete Task</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© 2025 Task Manager. All rights reserved.</p>
+      <p>Created by <a href="" target="_blank">Naveen Vinod Kumar 💖</a></p>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
