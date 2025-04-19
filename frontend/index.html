@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
       <h1>📝 Task Manager</h1>
+      <p>Manage your tasks efficiently!</p>
 
       <form id="taskForm">
         <div class="form-group">
@@ -37,117 +45,9 @@
       </form>
     </div>
     <div id="taskList">
-      <h2>Tasks ⬇️</h2>
+      <h2 id="tasks-Header"></h2>
       <ul id="tasks">
         <!-- Task items will be dynamically added here -->
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
-        <li class="task-item">
-          <h3>Task Title</h3>
-          <p>Task Description</p>
-          <p class="status">
-            Status:
-            <span>Pending</span>
-          </p>
-          <button class="edit-btn">Update</button>
-        </li>
       </ul>
       <div class="bg"></div>
       <div class="update-form" id="updateForm">
@@ -190,6 +90,6 @@
       <p>Created by <a href="" target="_blank">Naveen Vinod Kumar 💖</a></p>
     </div>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>

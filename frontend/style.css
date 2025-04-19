@@ -21,6 +21,14 @@ h2 {
   text-align: center;
   color: #333;
 }
+p {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
 
 .form-group {
   display: flex;
@@ -97,13 +105,23 @@ button {
 .task-item .status > span {
   font-size: 14px;
   font-weight: 600;
-  background: yellowgreen;
+  background: #ffc107;
   padding: 5px 10px;
   border-radius: 6px;
   color: white;
   margin-bottom: 20px;
 }
+.status span.pending {
+  background: #ffc107;
+}
 
+.status span.inprogress {
+  background: #17a2b8;
+}
+
+.status span.completed {
+  background: #28a745;
+}
 .task-item button {
   background: #28a745;
   color: white;
@@ -178,4 +196,39 @@ button {
   margin-top: 40px;
   font-size: 14px;
   color: #888;
+}
+
+@media (max-width: 600px) {
+  #tasks {
+    grid-template-columns: 1fr !important;
+  }
+  .footer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50% -50%);
+  }
+  .update-form {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .update-form h2 {
+    font-size: 20px;
+  }
+  .update-form p {
+    font-size: 14px;
+  }
+  .update-form input {
+    font-size: 14px;
+  }
+  .update-form button {
+    font-size: 14px;
+  }
+  .update-form .form-group {
+    margin-bottom: 10px;
+  }
 }
