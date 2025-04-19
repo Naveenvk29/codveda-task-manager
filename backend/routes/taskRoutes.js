@@ -5,7 +5,7 @@ import {
   getTaskById,
   updateTask,
   deleteTask,
-} from "../controllers/taskController.js";
+} from "../controller/taskController.js";
 
 const router = Router();
 
@@ -14,3 +14,5 @@ router.route("/").post(createTask).get(getAllTasks);
 
 // Route to get, update, or delete a task by ID
 router.route("/:id").get(getTaskById).put(updateTask).delete(deleteTask);
+
+export default router;

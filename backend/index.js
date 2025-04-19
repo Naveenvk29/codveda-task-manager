@@ -1,11 +1,11 @@
 import express from "express";
 import cors from "cors";
-import dotev from "dotenv";
+import dotevn from "dotenv";
 import connectdb from "./config/db.js";
 import taskRoutes from "./routes/taskRoutes.js";
 
 const app = express();
-dotev.config();
+dotevn.config();
 const port = process.env.PORT || 8080;
 
 // Middleware

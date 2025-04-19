@@ -5,10 +5,13 @@ const taskSchema = mongoose.Schema(
     title: {
       type: String,
       required: true,
+      trim: true,
     },
     description: {
       type: String,
       required: true,
+      trim: true,
+      default: "No description provided",
     },
     status: {
       type: String,
